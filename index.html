@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="shortcut icon" type="image/jpg" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAIW0lEQVR4nO2ba1BTZxrHX1SsO71su3Uc99Kus+3uzJaZ7m5XULxRuSoXYYsIyKVykZtFLciALDApJKAQDJdAiIBUBAvhDoK4BoIiqKw3tLTrosUynXEaSCD3kBPy7IcOXYQEcpJzcvjgf+YZvsB5n9/vfc/7Hg4BoZd5GdIDCFnJOCxHKTOLKaGn8qeT478VH414LooOEYsPH5SIooOmRPHhP4oTY59IMk70S5mZXFlpvh/QaOuo7t3kyEtKNkryGeyphJhnEz7Os0InW8Bd7jt14rhPhdKcDJ68hPVXqpmMirwk/9BUUtzTCfcdxoM6/vR1wnGJ73G2A1Fs6ISEmfkF8PxWU825KDI2M0oUEyI2aaZx1kSwt1qan3UKELKimhspuOyPxMejxo1qfKkZNqHEUcFiecmZPZSAA0JW0lw6V+jpoLPErBsst20wnZXaAjS0ymLw0vPst8VJcU9NXsIErwShky2IPwt7riw6/TvS4WVn2TaiCH85pbNuoCaDfdRSNsueNHgpp3j7ZKCXhmpQgwICPDFlBceOFHhlRZHdZIAHNrECQPXDe2DS8tKdpMCruIXvTob8Q0015JLwFcXbSYEHLtda/Fm4kPDGXbfChK/b7OTBfdiEv7t2wmPXypt5hBCS0FP5hAB7Ouimk46MSc8wuIrK0r0gELzwnA8IWckvVP5FxmamTWWc+PdkoBe2PLwneTOPEEJyDitE6LLFLPCJAE9Mmke7IL3IXY9nbOD5rZaxmWmiqCCpoZlXVrLJ2/GhqOgV0SFfpcng7jtgmpHeBbyS18zqAyErGSu7SOjjpPs/PMkzjxBCktO0r0zelIJ91ApukQeR/Si+LP27+HCgnNQNby7wmLZeHLv8PagXPjp4Snme81sy+pJe5K4n7ZyfH+03YU1Y369BkrEHF7woOmQK772+4gIC2hqs/w8ajG8NWM8roKrxAKHzMve7ky1MBnvPqKq571Ldv9mZffx5Csa3hvk1w98Jkz72hiW4bQNZZbEv1b0TEu09j9GFAjC+NWDX3oepeGe9AqSZJwVU901IYIy2TtO3QadXAN8aMMEboCj2enH5H9ijlVRU/Irq3gmJdjQp0iD8/Fuiww2ErnYgdLKF6VPpTVT3TVi0I6GXjBGA8a0B6/sbiCJddWQdeZREc9dl3GgBfGvQDLl+b+6Yhd3qY0m1iq8tVbntaq7BZrCBP6vxCNB+HVluroDsNnWDI0MOlqqoCuWU3kYAaKuw3teNhsf41oD954QjUQKc6AqLCPAtkGn1CxjPeg8XfO9rAIKP1xAlwFLlnC0HHg8W/2EFG6V9jEtA/yaNufDGCCBjZXAEqk2LGtGOpu3DJWDARmkJAWTUuV7NFj0CMrypEMBotrwALl+1e1Ej2FimAy4B139PyC3AaFU3WlpARQ+2a1EjMMbaZPT5z7cGrPdVQjZBKgSUX5/5cLEAoK3CBG/iOwa/OeZitoAWdZOlBVQJ4E29zWgGbHA+CH1q9oOQpQV4MeU6g81o7rl9j0eA5PaeZ6QIoJMnILRUrjLYjHbkkNG/DA30u4NHW6SuZKRqozkCeIPwi447sN7Uyu9S5+ER8Hm1atywgKcZYcuBz/DXQnl/NNjW7YfNdb6QfpNVb44Ac5NarxrCI4Deor5q8GIwwlurufYbgy9ERL0b4Tj/GGyu8/253Fojtdw7vF9akPnn0Giwyq9QhuERwO6eSV7yotj9ff/VB//t9a3g3XH4Bfi5Sr7BNGyVxOR1ztDwwLvmyKF6ADYsedHZJ2mJC+Fb+4NgW0OAXvjNdb5gz/MH5v0qHwtxI4QQoglgTWipQoFHQMw5pXjZCwPwVmMDH2gwvjUo+K9DluCoQfD55dUeM3PmwXmLvR3KbFY34z0BsttVxu1XmsfxdeOCP0LI5SNGwc9VyJUkEet+lf6HDALD6lKFu+bgOzpdc+Rwlq/+k1EDTE/XvvVJZ5wWD/x8CblD5h2NS8JfmfHxypfP4p39hAuKZ7gGog2V1M8Hs603XoJ3R5zq1N2zbkTD53Wqkzzz5DpTHoDKemYCcQ1WNVa1bn/nUZUpq2BznS9sbwiElEFm+4nhvFfNBacPlbwT38e4G147YBL8sWrlc5MGLnxQHbKl/oBJAuZWzd62SE3KDdb5k7fZb+MdP3OIbZPYf4rv0BCsm7tmzKUacGRIjYZ3yZFDWa/a3SQBCCGUdrPwqqkC5teOhkDd4d7079JuFZTl3OG6HhIs+Cg8IKu0gdz3Mm+XxiTdyG0/2J04aVe/X/8+05UJnqwfjRKQ0agYMBkeIYRoAsGaiKv/FBIh4YXVUbcfdjeFzrq1RmBOLWFae54/rp/f2xoNQZUjS8KHchSqmlvwhlkCEELo3KPWd3w7403eD8gqe54/RDd3gSNDtgjePVeuM2vpLwx3uO4jz7ZojJjZJ1ZEZFcRuOSKwJEhByfGT6++C7pnviAMfi6lwzVb93XEaaieeX31yaUE8OV8B44MOeR3qisIh59L2Qjvg8DLCTKqgfWVU3MYsHp/KCMNfi61Dy+9Fd9HH6UaeH7tbgrVnblXlUI6/PxkD3FKdzeF6KiGD+pOlJYOf0Xex2WXSvmjix/G9tKeUQHu0Biso90ubuGN8NZSAj8/xcPVEWFXT4qIglvqpNjWEACJ108/ODvSaEM196JwHtYGxV+jj+5qDCJ8xj3aorC0wYKeFQm+MM1Pmjfk3q0oONKXOebWGjFrCrBdvR8c6DquTB5k3ip+UBPDA97K+39BowLIqmqkYWf+vXOn0m8WXU7oP/0otpf2Qzg/dTL0X8lT4fyT4sie9OfxffTRlMH8AfoQ50v2w9qo5idXln5/9zIvY3b+B4PVUa23Nm7IAAAAAElFTkSuQmCC"/>
+  <title>Google home page - sequell</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@150&display=swap" rel="stylesheet"> 
+  <link href='https://css.gg/dice-5.css' rel='stylesheet'>
+  <link href='https://css.gg/ghost-character.css' rel='stylesheet'>
+
+  <style>
+
+* {
+
+box-sizing: border-box;
+
+}
+
+html {
+
+margin: 0px;
+padding: 0px;
+border: 0px;
+background-color: white;
+/*height: auto;*/
+font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+body {
+
+margin: 0px;
+padding: 0px;
+border: 0px;
+/*height: auto;*/
+
+}
+
+ul {
+
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+
+}
+
+li {
+
+display: inline;
+
+}
+
+a {
+
+text-decoration: none;
+color: rgb(112, 112, 112);
+
+}
+
+a:hover {
+
+text-decoration: underline;
+color: rgb(112, 112, 112);
+
+}
+
+#textLang {
+
+color: blue;
+
+}
+
+.top {
+
+display: flex;
+justify-content: flex-end;
+flex-direction: row;
+top: 0px;
+right: 0px;
+width: 100%;
+padding: 5px;
+font-size: 12px;
+align-items: center;
+
+}
+
+#gamil, #images {
+
+color: black;
+padding: 10px;
+
+}
+
+#icon1 {
+
+padding: 12px;
+border-radius: 20px;
+border: none;
+background-color: white;
+
+}
+
+#icon2 {
+
+padding: 14px;
+border-radius: 20px;
+border: none;
+background-color: white;
+
+}
+
+#icon1:hover, #icon2:hover {
+
+background-color:rgb(251, 240, 240);
+
+}
+
+
+.center {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+padding: 2px;
+
+}
+
+.imgimg {
+
+display: flex;
+justify-content: center;
+width: 100%;
+padding: 6px;
+
+}
+
+.searchb {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+border: none; 
+padding: 20px;
+
+}
+
+.searchb form {
+
+display: flex;
+flex-direction: row;
+justify-content: left;
+border: 1px solid rgb(206, 206, 206);
+border-radius: 20px;
+width: 550px;
+/* ??? suddenly, width in px works now ??? 
+contemplate upon min-width and resizing */
+height: 45px;
+resize: horizontal;
+
+}
+
+.searchb form input[type=text] {
+
+overflow: hidden;
+width: 100%;
+border: none;
+
+}
+
+.searchb form:hover {
+
+border: 1px solid rgb(218, 218, 218);
+box-shadow: 2px 2px 4px 4px rgba(128, 128, 128, 0.2);
+
+}
+
+.searchb button[type=submit] {
+
+padding: 6px 10px;
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: 17px;
+border: none;
+cursor: pointer;
+background-color: inherit;
+
+}
+
+.searchb input[type=text] {
+
+padding: 6px 10px;
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: 17px;
+border: none;
+background-color: inherit;
+overflow: hidden;
+outline: none;
+
+}
+
+.buttons {
+
+display: flex;
+justify-content: center;
+width: 100%;
+padding: 4px; 
+border-bottom: 0px none;
+
+}
+
+#gs {
+
+border: none;
+margin: 5px;
+height: 35px;
+width: 137px;
+border-radius: 5px;
+
+/* both #gs and #lucky increase height only applying height in #gs? */
+
+}
+
+#gs:hover {
+
+border: 1px solid  rgb(218, 218, 218);
+background-color: rgb(251, 240, 240);
+
+}
+
+#lucky {
+
+border: none;
+margin: 15px;
+width: 137px;
+margin: 5px;
+border-radius: 5px;
+
+}
+
+#lucky:hover {
+
+border: 1px solid  rgb(218, 218, 218);
+background-color: rgb(251, 240, 240);
+
+}
+
+.text {
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+font-size: 11px;
+margin-top: 22px;
+
+}
+
+.bottom {
+
+display: flex;
+justify-content: flex-start;
+flex-direction: row;
+flex-wrap: wrap;
+background-color: gray;
+position: absolute;
+bottom: 0px;
+width: 100%;
+
+}
+
+.fCountry {
+
+display: flex;
+justify-content: flex-start;
+width: 100%;
+padding-left: 14px;
+padding: 5px;
+border-bottom: 1px solid rgb(218, 218, 218);
+background-color: rgb(251, 240, 240);
+
+}
+
+#fText {
+
+margin: 7px;
+padding: 4px;
+padding-left: 10px;
+font-size: 14px;
+border: none;
+color: rgb(112, 112, 112);
+
+}
+
+
+.fLeft {
+
+display: flex;
+justify-content: flex-start;
+padding: 13px;
+padding-left: 30px;
+width: 50%;
+font-size: 14px;
+background-color: rgb(251, 240, 240);
+
+
+}
+
+.fRight {
+
+display: flex;
+justify-content: flex-end;
+padding: 13px;
+padding-right: 30px;
+width: 50%;
+font-size: 14px;
+background-color: rgb(251, 240, 240);
+
+}
+
+@media screen and (max-width: 650px) {
+
+.fLeft, .fRight {
+  width: 100%;
+  justify-content: center;
+}
+
+}
+
+  </style>
+
+</head>
+<body>
+
+  <div class="top">
+    <ul>
+      <li><a id="gamil" href="/Gmail.com">Gmail</a></li>
+      <li><a id="images" href="/Images.com">Images</a></li>
+    </ul>
+
+    <button id="icon1"><i class="gg-dice-5"></i></button>
+    <button id="icon2"><i class="gg-ghost-character"></i></button>
+  </div>
+  
+  <div class="center">
+
+    <div class="imgimg">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    </div>
+    <div class="searchb">
+      <form action="/searchly.com">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <input type="text">
+      </form>
+    </div>
+    <div class="buttons">
+      <button id="gs">Google Search</button>
+      <button id="lucky">I'm Feeling Lucky</button>
+    </div>
+    <p class="text">Google offered in:&nbsp<a href="https://en.wikipedia.org/wiki/Lists_of_languages" id="textLang">LanguagesTM</a></p>
+
+  </div>
+
+  <div class="bottom">
+    <div class="fCountry">
+      <p id="fText">Country</p>
+    </div>
+
+    <div class="fLeft">
+      <ul>
+        <li><a href="/about.com">About</a></li>&nbsp&nbsp&nbsp
+        <li><a href="/advertising.com">Advertising</a></li>&nbsp&nbsp&nbsp
+        <li><a href="/business.com">Business</a></li>&nbsp&nbsp&nbsp
+        <li><a href="/howsearchworks.com">How Search Works</a></li>
+      </ul>
+    </div>
+
+    <div class="fRight">
+      <ul>
+        <li><a href="/privacy.com">Privacy</a></li>&nbsp&nbsp&nbsp
+        <li><a href="/terms.com">Terms</a></li>&nbsp&nbsp&nbsp
+        <li><a href="/settings.com">Settings</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <script>
+
+  </script>
+
+</body>
+</html>
